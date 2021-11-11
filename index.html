@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="calculator.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="CalculatorScript.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form name="formcalc" class="Form">
+        <input class="Text" type="text" name="InputText1" id="InputText1" disabled>
+        <br>
+        <input class="Text" type="text" name="InputText2" id="InputText2" disabled value="0">
+        <br>
+        <input class="Buttons2" onclick="Clear()" type="button" value="C">
+        <input class="Buttons2" onclick="DeleteSymbol()" id="DeleteSymbols" type="button" value="&#8592;">
+        <br>
+        <input class="Buttons" onclick="AddToText(id)" id="button_number7" type="button" value="7">
+        <input class="Buttons" onclick="AddToText(id)" id="button_number8" type="button" value="8">
+        <input class="Buttons" onclick="AddToText(id)" id="button_number9" type="button" value="9">
+        <input class="Buttons" onclick="Operation('+')" id="button_+" type="button" value="+">
+        <br>
+        <input class="Buttons" onclick="AddToText(id)" id="button_number4" type="button" value="4">
+        <input class="Buttons" onclick="AddToText(id)" id="button_number5" type="button" value="5">
+        <input class="Buttons" onclick="AddToText(id)" id="button_number6" type="button" value="6">
+        <input class="Buttons" onclick="Operation('-')" id="button_-" type="button" value="-">
+        <br>
+        <input class="Buttons" onclick="AddToText(id)" id="button_number1" type="button" value="1">
+        <input class="Buttons" onclick="AddToText(id)" id="button_number2" type="button" value="2">
+        <input class="Buttons" onclick="AddToText(id)" id="button_number3" type="button" value="3">
+        <input class="Buttons" onclick="Operation('/')" id="button_/" type="button" value="/">
+        <br>
+        <input class="Buttons" onclick="AddToText(id)" id="button_number0" type="button" value="0">
+        <input class="Buttons" onclick="AddToTextComa(id)" id="button_number," type="button" value=".">
+        <input class="Buttons" onclick="Operation('=')" type="button" value="=">
+        <input class="Buttons" onclick="Operation('*')" id="button_*" type="button" value="*">
+        <br>
+    </form>
+</body>
+</html>

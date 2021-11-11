@@ -1,0 +1,36 @@
+.Buttons
+{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.Buttons2
+{
+    width: 109px;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.Text
+{
+    background-color: white;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 220px;
+    height: 25px;
+}
+.Form
+{
+    outline: 2px solid #000;
+    width: 237px;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
