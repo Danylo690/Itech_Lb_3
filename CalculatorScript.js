@@ -4,9 +4,10 @@ var DisableButton;
 function AddToText (id)
 {
     var number = document.getElementById(id).value;
-    if(document.getElementById("InputText2").value == 0)
+    if(document.getElementById("InputText2").value == 0 || DisableButton)
     {
         document.getElementById("InputText2").value = number;
+        DisableButton = false;
     }
     else
     {
