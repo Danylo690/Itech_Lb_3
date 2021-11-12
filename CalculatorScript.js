@@ -33,25 +33,26 @@ function Operation(operator)
 {
     var Element1 = parseFloat(document.getElementById("InputText1").value);
     var Element2 = parseFloat(document.getElementById("InputText2").value);
-    if(!isNaN(Element1) && !isNaN(Element2))
+    if(!isNaN(Element1) && !isNaN(Element2) && Element2 != 0)
     {
         Calculate();
         Element2 = parseFloat(document.getElementById("InputText2").value)
     }
     if(!isNaN(Element2) && operator != "=")
     {
-        number1 = Element2;
+        if(Element2 != 0)
+        {
+            number1 = Element2;
+        }
         DisableButton = false;
         document.getElementById("InputText1").value = number1;
         document.getElementById("InputText1").value  += operator;
         document.getElementById("InputText2").value = 0;
-        console.log(number1);
     }
     else
     {
         document.getElementById("InputText1").value = "";
         DisableButton = true;
-        console.log(number1);
     }
 }
 function Calculate()
