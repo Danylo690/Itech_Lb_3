@@ -49,33 +49,34 @@ function Operation(operator)
         document.getElementById("InputText1").value  += operator;
         document.getElementById("InputText2").value = 0;
     }
-    else
+    else if(number1 != undefined)
     {
         document.getElementById("InputText1").value = "";
+        document.getElementById("InputText2").value = number1;
         DisableButton = true;
+        number1 = undefined;
     }
 }
 function Calculate()
 {
     number2 = parseFloat(document.getElementById("InputText2").value);
-    var result;
     var Element = document.getElementById("InputText1").value;
     switch(Element[Element.length - 1])
     {
         case "+":
-        result = number1 + number2;
+        number1 = number1 + number2;
         break;
         case "-":
-        result = number1 - number2;
+        number1 = number1 - number2;
         break;
         case "*":
-        result = number1 * number2;
+        number1 = number1 * number2;
         break;
         case "/":
-        result = number1 / number2;
+        number1 = number1 / number2;
         break;
     }
-    document.getElementById("InputText2").value = result;
+    document.getElementById("InputText2").value = number1;
 }
 function Clear()
 {
